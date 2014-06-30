@@ -11,15 +11,16 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-sticky</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.0</version>
     <name>jquery-sticky</name>
     <description>WebJar for jquery-sticky</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>1.0.1</upstream.version>
-        <upstream.url>https://github.com/garand/sticky</upstream.url>
+        <upstream.version>1.0.0</upstream.version>
+        <upstream.url>https://github.com/biegel/sticky</upstream.url>
+        <upstream.directory>https://github.com/biegel/sticky/archive</upstream.directory>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
             {
@@ -77,8 +78,8 @@
                             <goal>download-single</goal>
                         </goals>
                         <configuration>
-                            <url>${upstream.url}</url>
-                            <fromFile>jquery.sticky.js-${upstream.version}.zip</fromFile>
+                            <url>${upstream.directory}/</url>
+                            <fromFile>${upstream.version}.zip</fromFile>
                             <toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
                         </configuration>
                     </execution>
@@ -98,7 +99,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/SOME_SUBDIR-${upstream.version}" />
+                                    <fileset dir="${project.build.directory}/sticky-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
