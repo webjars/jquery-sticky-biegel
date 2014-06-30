@@ -10,7 +10,7 @@
     
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>jquery-sticky</artifactId>
+    <artifactId>jquery-sticky-biegel</artifactId>
     <version>1.0.0</version>
     <name>jquery-sticky</name>
     <description>WebJar for jquery-sticky</description>
