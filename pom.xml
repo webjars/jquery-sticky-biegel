@@ -51,9 +51,9 @@
     </licenses>
 
     <scm>
-        <url>http://github.com/webjars/jquery-sticky</url>
-        <connection>scm:git:https://github.com/webjars/jquery-sticky.git</connection>
-        <developerConnection>scm:git:https://github.com/webjars/jquery-sticky.git</developerConnection>
+        <url>http://github.com/webjars/jquery-sticky-biegel</url>
+        <connection>scm:git:https://github.com/webjars/jquery-sticky-biegel.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/jquery-sticky-biegel.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     
